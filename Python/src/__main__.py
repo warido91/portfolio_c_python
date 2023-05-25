@@ -1,32 +1,73 @@
-# Fonction de recherche de films
+import os
 
-def search_movies():
+def display_products():
+    file_path = "database.txt"  # Chemin relatif vers le fichier database.txt
+
+    if not os.path.exists(file_path):
+        print("Le fichier database.txt n'existe pas.")
+        return
+
+    with open(file_path, "r") as file:
+        print("\n-- Tous les produits --")
+
+        for line in file:
+            product = line.strip().split(",")
+            product_id, title, description, genre, platform, actors, directors = product
+
+            print(f"\nProduit {product_id}")
+            print(f"Titre : {title}")
+            print(f"Description : {description}")
+            print(f"Genre : {genre}")
+            print(f"Plateforme : {platform}")
+            print(f"Acteurs : {actors}")
+            print(f"Réalisateurs : {directors}")
+
+def search_product():
+    file_path = "database.txt"  # Chemin relatif vers le fichier database.txt
+
+    if not os.path.exists(file_path):
+        print("Le fichier database.txt n'existe pas.")
+        return
+
     search_term = input("Entrez un terme de recherche : ")
 
-    with open("../C/src/database.txt", "r", encoding="utf-8") as file:
-        movies = file.readlines()
+    with open(file_path, "r") as file:
+        print("\n-- Résultats de la recherche --")
 
-    found_movies = []
+        for line in file:
+            product = line.strip().split(",")
+            product_id, title, description, genre, platform, actors, directors = product
 
-    for movie in movies:
-        movie_info = movie.strip().split(",")
-        title = movie_info[1]
+            # Vérifier si le terme de recherche correspond au titre ou à la description
+            if search_term.lower() in title.lower() or search_term.lower() in description.lower():
+                print(f"\nProduit {product_id}")
+                print(f"Titre : {title}")
+                print(f"Description : {description}")
+                print(f"Genre : {genre}")
+                print(f"Plateforme : {platform}")
+                print(f"Acteurs : {actors}")
+                print(f"Réalisateurs : {directors}")
 
-        if search_term.lower() in title.lower():
-            found_movies.append(movie)
+# Point d'entrée de l'application
+def main():
+    while True:
+        print("\n--- Application Utilisateur ---")
+        print("1. Afficher tous les produits")
+        print("2. Rechercher un produit")
+        print("3. Quitter")
 
-    if found_movies:
-        print(f"\nRésultats de la recherche pour '{search_term}':\n")
-        for movie in found_movies:
-            movie_info = movie.strip().split(",")
-            print("Titre :", movie_info[1])
-            print("Description :", movie_info[2])
-            print("Genre :", movie_info[3])
-            print("Plateforme :", movie_info[4])
-            print("Acteurs :", movie_info[5])
-            print("Réalisateurs :", movie_info[6])
-            print("-------------------------------------")
-    else:
-        print(f"Aucun film trouvé pour '{search_term}'.")
+        choice = input("Entrez votre choix : ")
 
-search_movies()
+        if choice == "1":
+            display_products()
+        elif choice == "2":
+            search_product()
+        elif choice == "3":
+            break
+        else:
+            print("Choix invalide. Veuillez réessayer.")
+
+    print("Merci d'avoir utilisé l'application utilisateur.")
+
+if __name__ == "__main__":
+    main()

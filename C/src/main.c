@@ -4,7 +4,7 @@
 #include <locale.h>
 
 int main() {
-    //setlocale(LC_ALL, "");  Fonction de localisation pour les accents
+    setlocale(LC_ALL, "");  //Fonction de localisation pour les accents
     struct Movie movies[100];
     int count = 0;
     int choice;

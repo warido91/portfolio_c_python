@@ -4,7 +4,7 @@
 #include "recommendation.h"
 
 void saveMovies(struct Movie movies[], int count) {
-    FILE *file = fopen("database.txt", "w");
+    FILE *file = fopen("..\\..\\database.txt", "w");
     if (file == NULL) {
         printf("Erreur lors de l'ouverture du fichier.\n");
         return;
@@ -107,7 +107,7 @@ void deleteMovie(struct Movie movies[], int *count) {
 }
 
 void displayMovies() {
-    FILE *file = fopen("database.txt", "r");
+    FILE *file = fopen("..\\..\\database.txt", "r");
     if (file == NULL) {
         printf("Erreur lors de l'ouverture du fichier.\n");
         return;
