@@ -1,0 +1,10 @@
+1,Le Roi Lion,Un jeune lion prince est chassé de son royaume par un vilain phacochère et un gnou traître.,Animation,DVD,Donald Glover,Jon Favreau
+2,Intouchables,Un aristocrate tétraplégique engage un jeune homme de banlieue comme aide-soignant.,Comédie,DVD,Omar Sy,Eric Toledano, Olivier Nakache
+3,Amélie Poulain,Une jeune serveuse parisienne aide les gens autour d'elle à trouver le bonheur.,Romance,DVD,Audrey Tautou,Jean-Pierre Jeunet
+4,La La Land,Un pianiste de jazz et une actrice aspirent à la réussite à Los Angeles.,Musical,DVD,Ryan Gosling,Damien Chazelle
+5,Le Fabuleux Destin d'Amélie Poulain,Une jeune femme timide change la vie des gens autour d'elle à Montmartre.,Comédie,DVD,Audrey Tautou,Jean-Pierre Jeunet
+6,Le Voyage de Chihiro,Une petite fille découvre un monde fantastique rempli de créatures étranges.,Animation,DVD,Rumi Hiiragi,Hayao Miyazaki
+7,Les Choristes,Un professeur de musique transforme la vie d'étudiants difficiles dans un internat.,Drame,DVD,Gérard Jugnot,Christophe Barratier
+8,Le Grand Bleu,Deux plongeurs en compétition ont une rivalité amicale depuis l'enfance.,Aventure,DVD,Jean-Marc Barr,Luc Besson
+9,Amour,Un couple âgé traverse des épreuves lorsque l'épouse a une attaque.,Drame,DVD,Jean-Louis Trintignant,Michael Haneke
+10,Le Dîner de Cons,Un groupe d'amis organise des dîners où ils invitent des personnes stupides pour se moquer d'elles.,Comédie,DVD,Thierry Lhermitte,Francis Veber
