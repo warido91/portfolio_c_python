@@ -9,4 +9,4 @@ Une base de données (database.txt) est présente avec des données préstockée
 
 ## Python
 
-`#0969DA` Version utilisateur de l'application de recommandantion de film
+Version utilisateur de l'application de recommandantion de film
